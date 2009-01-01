@@ -12,7 +12,7 @@ a{
 }
 img{
 	cursor: pointer;
-	-webkit-transition-property: rotate;
+	-webkit-transition-property: all;
   	-webkit-transition-duration: 1s;
 }
 a:hover{
@@ -21,9 +21,10 @@ a:hover{
 
 .flipped{
 	-webkit-transform: rotate(360deg);
-	-webkit-transform: perspective(5);
+	-webkit-transform: rotate3d(1,1,1,180deg);
 }
 
 .flip_back{
 	-webkit-transform: rotate(-360deg);
+	-webkit-transform: rotate3d(1,1,1,360deg);
 }
