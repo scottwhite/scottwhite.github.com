@@ -10,6 +10,20 @@ p{
 a{
 	color: red;
 }
+img{
+	cursor: pointer;
+	-webkit-transition-property: rotate;
+  	-webkit-transition-duration: 1s;
+}
 a:hover{
 	color: blue;
+}
+
+.flipped{
+	-webkit-transform: rotate(360deg);
+	-webkit-transform: perspective(5);
+}
+
+.flip_back{
+	-webkit-transform: rotate(-360deg);
 }

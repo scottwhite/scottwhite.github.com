@@ -1,7 +1,20 @@
 <!DOCTYPE HTML>
 <html>
-<head></head>
+<head>
+  <link rel="stylesheet" href="main.css" type="text/css" media="screen" charset="utf-8">
+  <script type="text/javascript" charset="utf-8">
+    function flip(){
+      e = document.getElementById('me');
+      e.className=(e.className=='flipped'?'flip_back':'flipped');
+      
+    }
+  </script>
+</head>
 <body>
-<img src="./me.jpg">
+<img id="me" src="./me.jpg" onclick="javascript:flip();">
+<p>
+  Application developer riding the latest wave<br/>
+  <a href="http://www.3rdarm.com">My company</a>
+</p>
 </body>
 </html>
